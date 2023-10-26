@@ -103,6 +103,10 @@ This driver is ARM-only, and leverages the onboard PWM peripheral and DMA to off
 
 ```make
 WS2812_DRIVER = pwm
+
+You may optionally switch the PIO peripheral used with the following define in config.h:
+```c
+#define WS2812_PIO_USE_PIO1 // Force the usage of PIO1 peripheral, by default the WS2812 implementation uses the PIO0 peripheral
 ```
 
 ### SPI Driver :id=spi-driver
