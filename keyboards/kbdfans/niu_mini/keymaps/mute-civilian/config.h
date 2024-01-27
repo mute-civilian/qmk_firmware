@@ -1,0 +1,5 @@
+#define MACRO_TIMER 20
+#define MK_3_SPEED
+#define MK_MOMENTARY_ACCEL
+
+#define NO_CHARYBDIS_KEYCODES

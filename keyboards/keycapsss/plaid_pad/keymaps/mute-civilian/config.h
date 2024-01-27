@@ -1,0 +1,2 @@
+#define MACRO_TIMER 20
+#define NO_CHARYBDIS_KEYCODES
