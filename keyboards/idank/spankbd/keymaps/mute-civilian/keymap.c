@@ -12,7 +12,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______  , _______ , DESKTOP , _______  , _______  ,                              AM_CYCLE   , _______  , _______ , _______  , QK_BOOT  ,
     AM_LEFT  , DESK_L  , MISSION , DESK_R   , AM_RITE  ,                              AM_INC_PAN , AM_1     , AM_2    , AM_3     , AM_CCW   ,
     KC_LCTL  , _______ , _______ , _______  , _______  ,                              AM_DEC_PAN , MS_BACK  , MS_FORE , TAB_BACK , TAB_FORE ,
-                         _______ , MUTE_CAM . MUTE_MIC ,                              RAZ_HAND   , _______  , _______
+                         _______ , MUTE_CAM , MUTE_MIC ,                              RAZ_HAND   , _______  , _______
   ),
 
   [_MOUSE] = LAYOUT_split_3x5_3(
