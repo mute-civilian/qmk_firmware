@@ -21,9 +21,9 @@ static const char * const secrets[] = {
 
 bool process_record_secrets(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
-    case KC_SECRET_1 ... KC_SECRET_END: // Secrets!  Externally defined strings, not stored in repo
+    case KC_SEC_1 ... KC_SEC_END: // Secrets!  Externally defined strings, not stored in repo
      if (!record->event.pressed) {
-        send_string_with_delay(secrets[keycode - KC_SECRET_1], MACRO_TIMER);
+        send_string_with_delay(secrets[keycode - KC_SEC_1], MACRO_TIMER);
       }
       return false;
       break;
