@@ -41,10 +41,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     case SARCASM:
       if (record->event.pressed) {
         tAuNtTeXt = !tAuNtTeXt;
+        // when it's turned on, toggle caps lock (makes first letter lowercase)
         if (tAuNtTeXt) {
-          tap_code(KC_CAPS);
-        }
-        else if (host_keyboard_leds() & (1<<USB_LED_CAPS_LOCK)) {
           tap_code(KC_CAPS);
         }
       }

@@ -1,6 +1,6 @@
 SRC += mutecivilian.c
 SRC += features/secrets.c
-SRC += features/combos.c
+# SRC += features/combos.c
 SRC += process_records.c
 
 ifeq ($(strip $(CUSTOM_POINTING_DEVICE)), yes)

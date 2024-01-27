@@ -26,11 +26,8 @@ enum combo_events {
   COMBO_WORD_CAPS,
   COMBO_BSPC,
   COMBO_BSPC_NUM,
-  COMBO_DEL,
-  COMBO_LENGTH
+  COMBO_DEL
 };
-
-uint16_t COMBO_LEN = COMBO_LENGTH;
 
 const uint16_t PROGMEM combo_alfred[]      = { NAV_SPACE, SYM_ENT,    COMBO_END};
 const uint16_t PROGMEM combo_at[]          = { KC_M,      KC_COMM,    COMBO_END};
@@ -80,7 +77,7 @@ combo_t key_combos[] = {
   [COMBO_TAB]           = COMBO( combo_tab,         KC_TAB),
   [COMBO_TERMINAL]      = COMBO( combo_terminal,    KC_NUM_LOCK),
   [COMBO_UNDERSCORE]    = COMBO( combo_unds,        KC_UNDS),
-  [COMBO_WORD_CAPS]     = COMBO( combo_wcaps,       CAPS_WORD),
+  [COMBO_WORD_CAPS]     = COMBO( combo_wcaps,       CW_TOGG),
   [COMBO_BSPC]          = COMBO( combo_bspc,        KC_BSPC),
   [COMBO_BSPC_NUM]      = COMBO( combo_bspc_num,    KC_BSPC),
   [COMBO_DEL]           = COMBO( combo_del,         KC_DEL),
