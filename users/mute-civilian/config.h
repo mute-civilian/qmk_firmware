@@ -94,10 +94,18 @@
 #define VOL_U      KC_AUDIO_VOL_UP
 #define MUTE       KC_AUDIO_MUTE
 
+/* Google Workspace */
+#define DOC_SZ     LGUI(LALT(KC_LBRC))
+
 /* Google Meet */
-#define MUTE_MIC   LGUI(KC_D)
-#define MUTE_CAM   LGUI(KC_E)
-#define RAZ_HAND   LCTL(LGUI(KC_H))
+#define GOO_MIC    LGUI(KC_D)
+#define GOO_CAM    LGUI(KC_E)
+#define GOO_HAND   LCTL(LGUI(KC_H))
+
+/* Zoom */
+#define ZOO_MIC    LGUI(LSFT(KC_A))
+#define ZOO_CAM    LGUI(LSFT(KC_V))
+#define ZOO_HAND   LALT(KC_Y)
 
 /* Slack */
 #define SL_CL_RPAN LGUI(KC_DOT)
