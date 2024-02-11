@@ -5,7 +5,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_Q   , KC_W  , KC_E    , KC_R       , KC_T       ,                KC_Y      , KC_U     , KC_I      , KC_O   , KC_P     ,
     KC_CA  , KC_AS , KC_GD   , KC_SF      , MOU_G      ,                MOU_H     , KC_SJ    , KC_GK     , KC_AL  , KC_CSCLN ,
     NAV_Z  , KC_X  , KC_C    , KC_V       , KC_B       ,                KC_N      , KC_M     , KC_COMM   , KC_DOT , SYM_SLSH ,
-                     DOC_SZ  , WORDS_BACK , SYM_ENT    ,                NAV_SPACE , MISC_DEL , KC_NO
+                     DOC_SZ  , SYM_ENT , WORDS_BACK   ,                MISC_DEL , NAV_SPACE   , KC_NO
   ),
 
   [_MISC] = LAYOUT_split_3x5_3(
@@ -26,7 +26,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______ , KC_F6      , ALT_U   , _______  , _______   ,             GUI_L   , KC_HOME    , KC_END  , GUI_R , _______ ,
     _______ , WEB_B      , ALT_D   , WEB_F    , _______   ,             LEFT    , KC_DOWN    , KC_UP   , RIGHT , _______ ,
     _______ , SL_CL_RPAN , SL_DMS  , SL_EMOJI , SL_LATER  ,             ALT_L   , _______    , _______ , ALT_R , _______ ,
-                           _______ , SL_HOME  , SL_THREAD ,             _______ , SCREEN_CAP , _______
+                           _______ , SL_THREAD, SL_HOME,             SCREEN_CAP , _______, _______
   ),
 
   [_SYMBOLS] = LAYOUT_split_3x5_3(
@@ -40,7 +40,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_SEC_1 , KC_SEC_2 , KC_SEC_5 , KC_SEC_9 , KC_SEC_10  ,            _______ , _______ , _______ , _______ , SARCASM ,
     KC_SEC_3 , KC_SEC_4 , _______  , _______  , _______    ,            _______ , CAPS    , _______ , _______ , _______ ,
     KC_SEC_7 , KC_SEC_6 , KC_SEC_8 , _______  , _______    ,            _______ , _______ , _______ , _______ , _______ ,
-                          _______  , _______  , LGUI(KC_0) ,            _______ , _______ , _______
+                          _______  , LGUI(KC_0)  , _______ ,            _______ , _______ , _______
   ),
 
   /* [_TEMPLATE] = LAYOUT_split_3x5_3( */
