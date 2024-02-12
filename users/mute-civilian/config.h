@@ -126,6 +126,8 @@
 #ifdef POINTING_DEVICE_DRIVER_ps2
   // The default streaming mode is flaky and doesn't always work. This setting doesn't seem to affect performance.
   #define PS2_MOUSE_USE_REMOTE_MODE
+  #define PS2_MOUSE_INVERT_X
+  #define PS2_MOUSE_INVERT_Y
 
   // Serial uses PIO0, change PS2 to PIO1.
   #define PS2_PIO_USE_PIO1
@@ -135,6 +137,7 @@
 
   // Start faster when keyboard resets.
   #define PS2_MOUSE_INIT_DELAY 500
+
 #endif
 
 #ifdef POINTING_DEVICE_TRACKPOINT_CIRQUE35
@@ -143,6 +146,7 @@
 
 #ifdef POINTING_DEVICE_DRIVER_cirque_pinnacle_i2c
   #define CIRQUE_PINNACLE_DIAMETER_MM 35
+  #define CIRQUE_PINNACLE_ATTENUATION EXTREG__TRACK_ADCCONFIG__ADC_ATTENUATE_3X
   // Tap for left click.
   #define CIRQUE_PINNACLE_TAP_ENABLE
   #define POINTING_DEVICE_GESTURES_SCROLL_ENABLE

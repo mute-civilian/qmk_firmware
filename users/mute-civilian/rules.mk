@@ -34,8 +34,6 @@ ifeq ($(strip $(ENCODER_ENABLE)), yes)
 endif
 
 # save space on MCU by disabling unused features
-LTO_ENABLE            = yes
-
 BOOTMAGIC_ENABLE      = no
 COMMAND_ENABLE        = no
 CONSOLE_ENABLE        = no
