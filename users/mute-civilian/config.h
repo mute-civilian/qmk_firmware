@@ -129,15 +129,21 @@
   #define PS2_MOUSE_INVERT_X
   #define PS2_MOUSE_INVERT_Y
 
+  #define PS2_MOUSE_X_MULTIPLIER 3
+  #define PS2_MOUSE_Y_MULTIPLIER 3
+  #define PS2_MOUSE_V_MULTIPLIER 1
+
+
   // Serial uses PIO0, change PS2 to PIO1.
   #define PS2_PIO_USE_PIO1
-
   #define PS2_DATA_PIN    GP2
   #define PS2_CLOCK_PIN   GP3
 
   // Start faster when keyboard resets.
   #define PS2_MOUSE_INIT_DELAY 500
 
+  #define PS2_MOUSE_SCROLL_DIVISOR_H 175
+  #define PS2_MOUSE_SCROLL_DIVISOR_V 175
 #endif
 
 #ifdef POINTING_DEVICE_TRACKPOINT_CIRQUE35
@@ -146,8 +152,4 @@
 
 #ifdef POINTING_DEVICE_DRIVER_cirque_pinnacle_i2c
   #define CIRQUE_PINNACLE_DIAMETER_MM 35
-  #define CIRQUE_PINNACLE_ATTENUATION EXTREG__TRACK_ADCCONFIG__ADC_ATTENUATE_3X
-  // Tap for left click.
-  #define CIRQUE_PINNACLE_TAP_ENABLE
-  #define POINTING_DEVICE_GESTURES_SCROLL_ENABLE
 #endif

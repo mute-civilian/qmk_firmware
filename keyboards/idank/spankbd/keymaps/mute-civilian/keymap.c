@@ -2,17 +2,17 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_BASE] = LAYOUT_split_3x5_3(
-    KC_Q   , KC_W  , KC_E    , KC_R       , KC_T       ,                KC_Y      , KC_U     , KC_I      , KC_O   , KC_P     ,
-    KC_CA  , KC_AS , KC_GD   , KC_SF      , MOU_G      ,                MOU_H     , KC_SJ    , KC_GK     , KC_AL  , KC_CSCLN ,
-    NAV_Z  , KC_X  , KC_C    , KC_V       , KC_B       ,                KC_N      , KC_M     , KC_COMM   , KC_DOT , SYM_SLSH ,
-                     DOC_SZ  , SYM_ENT , WORDS_BACK   ,                MISC_DEL , NAV_SPACE   , KC_NO
+    KC_Q   , KC_W  , KC_E    , KC_R    , KC_T       ,                  KC_Y     , KC_U      , KC_I     , KC_O   , KC_P     ,
+    KC_CA  , KC_AS , KC_GD   , KC_SF   , MOU_G      ,                  MOU_H    , KC_SJ     , KC_GK    , KC_AL  , KC_CSCLN ,
+    NAV_Z  , KC_X  , KC_C    , KC_V    , KC_B       ,                  KC_N     , KC_M      , KC_COMM  , KC_DOT , SYM_SLSH ,
+                     DOC_SZ  , SYM_ENT , WORDS_BACK ,                  MISC_DEL , NAV_SPACE , ZOO_HAND
   ),
 
   [_MISC] = LAYOUT_split_3x5_3(
-    _______  , _______ , DESKTOP , _______  , _______  ,                AM_CYCLE   , _______  , _______ , _______  , QK_BOOT  ,
-    AM_LEFT  , DESK_L  , MISSION , DESK_R   , AM_RITE  ,                AM_INC_PAN , AM_1     , AM_2    , AM_3     , AM_CCW   ,
-    KC_LCTL  , _______ , _______ , _______  , _______  ,                AM_DEC_PAN , MS_BACK  , MS_FORE , TAB_BACK , TAB_FORE ,
-                         _______ , ZOO_CAM  , ZOO_MIC  ,                ZOO_HAND   , _______  , _______
+    _______  , _______ , DESKTOP , _______ , _______ ,                 AM_CYCLE   , _______  , _______ , _______  , QK_BOOT  ,
+    AM_LEFT  , DESK_L  , MISSION , DESK_R  , AM_RITE ,                 AM_INC_PAN , AM_1     , AM_2    , AM_3     , AM_CCW   ,
+    KC_LCTL  , _______ , _______ , _______ , _______ ,                 AM_DEC_PAN , MS_BACK  , MS_FORE , TAB_BACK , TAB_FORE ,
+                         _______ , ZOO_CAM , ZOO_MIC ,                 _______    , ZOO_HAND , _______
   ),
 
   [_MOUSE] = LAYOUT_split_3x5_3(
@@ -23,10 +23,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [_NAV] = LAYOUT_split_3x5_3(
-    _______ , KC_F6      , ALT_U   , _______  , _______   ,             GUI_L   , KC_HOME    , KC_END  , GUI_R , _______ ,
-    _______ , WEB_B      , ALT_D   , WEB_F    , _______   ,             LEFT    , KC_DOWN    , KC_UP   , RIGHT , _______ ,
-    _______ , SL_CL_RPAN , SL_DMS  , SL_EMOJI , SL_LATER  ,             ALT_L   , _______    , _______ , ALT_R , _______ ,
-                           _______ , SL_THREAD, SL_HOME,             SCREEN_CAP , _______, _______
+    _______ , KC_F6      , ALT_U    , _______   , _______  ,             GUI_L      , KC_HOME , KC_END  , GUI_R , _______ ,
+    _______ , WEB_B      , ALT_D    , WEB_F     , _______  ,             LEFT       , KC_DOWN , KC_UP   , RIGHT , _______ ,
+    _______ , SL_CL_RPAN , SL_EMOJI , SL_DMS    , SL_LATER ,             ALT_L      , _______ , _______ , ALT_R , _______ ,
+                           _______  , SL_THREAD , SL_HOME  ,             SCREEN_CAP , _______ , _______
   ),
 
   [_SYMBOLS] = LAYOUT_split_3x5_3(

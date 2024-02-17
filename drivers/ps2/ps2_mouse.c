@@ -86,11 +86,11 @@ void ps2_mouse_read(report_mouse_t* mouse_report) {
     }
 
     // Reading the ps2 mouse too often can cause the pointing device on the other side to lock up.
-    static uint32_t last_exec = 0;
-    if (timer_elapsed32(last_exec) < 15) {
-        return;
-    }
-    last_exec = timer_read32();
+    /* static uint32_t last_exec = 0; */
+    /* if (timer_elapsed32(last_exec) < 15) { */
+    /*     return; */
+    /* } */
+    /* last_exec = timer_read32(); */
 
     /* receives packet from mouse */
 #ifdef PS2_MOUSE_USE_REMOTE_MODE
@@ -278,7 +278,8 @@ static inline void ps2_mouse_scroll_button_task(report_mouse_t *mouse_report) {
     static uint16_t scroll_button_time = 0;
     static int16_t  scroll_x, scroll_y;
 
-    if (PS2_MOUSE_SCROLL_BTN_MASK == (mouse_report->buttons & (PS2_MOUSE_SCROLL_BTN_MASK))) {
+    /* if (PS2_MOUSE_SCROLL_BTN_MASK == (mouse_report->buttons & (PS2_MOUSE_SCROLL_BTN_MASK))) { */
+    if (1 == 1) {
         // All scroll buttons are pressed
 
         if (scroll_state == SCROLL_NONE) {
