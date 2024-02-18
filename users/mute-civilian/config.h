@@ -126,8 +126,8 @@
 #ifdef POINTING_DEVICE_DRIVER_ps2
   // The default streaming mode is flaky and doesn't always work. This setting doesn't seem to affect performance.
   #define PS2_MOUSE_USE_REMOTE_MODE
-  #define PS2_MOUSE_INVERT_X
-  #define PS2_MOUSE_INVERT_Y
+  /* #define PS2_MOUSE_INVERT_X */
+  /* #define PS2_MOUSE_INVERT_Y */
 
   #define PS2_MOUSE_X_MULTIPLIER 3
   #define PS2_MOUSE_Y_MULTIPLIER 3
