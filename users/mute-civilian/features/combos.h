@@ -5,8 +5,9 @@ enum combo_events {
   COMBO_ALFRED,
   COMBO_AT,
   COMBO_AMPERSAND,
+  COMBO_BANG,
   COMBO_CLICK_L,
-  COMBO_CLICK_R,
+  /* COMBO_CLICK_R, */
   COMBO_DASH,
   COMBO_DBL_QUOT,
   COMBO_ESC,
@@ -24,16 +25,17 @@ enum combo_events {
   COMBO_TERMINAL,
   COMBO_UNDERSCORE,
   COMBO_WORD_CAPS,
-  COMBO_BSPC,
-  COMBO_BSPC_NUM,
-  COMBO_DEL
+  /* COMBO_BSPC, */
+  /* COMBO_BSPC_NUM, */
+  /* COMBO_DEL */
 };
 
 const uint16_t PROGMEM combo_alfred[]      = { NAV_SPACE, SYM_ENT,    COMBO_END};
 const uint16_t PROGMEM combo_at[]          = { KC_M,      KC_COMM,    COMBO_END};
 const uint16_t PROGMEM combo_ampersand[]   = { KC_I,      KC_U,       COMBO_END};
+const uint16_t PROGMEM combo_bang[]        = { KC_N,      KC_M,       COMBO_END};
 const uint16_t PROGMEM combo_click_left[]  = { KC_V,      KC_B,       COMBO_END};
-const uint16_t PROGMEM combo_click_right[] = { KC_N,      KC_M,       COMBO_END};
+/* const uint16_t PROGMEM combo_click_right[] = { KC_N,      KC_M,       COMBO_END}; */
 const uint16_t PROGMEM combo_dash[]        = { KC_DOT,    SYM_SLSH,   COMBO_END};
 const uint16_t PROGMEM combo_dub_quot[]    = { KC_AL,     KC_GK,      COMBO_END};
 const uint16_t PROGMEM combo_esc[]         = { KC_CA,     KC_AS,      COMBO_END};
@@ -51,16 +53,17 @@ const uint16_t PROGMEM combo_tab[]         = { NAV_Z,     KC_X,       COMBO_END}
 const uint16_t PROGMEM combo_terminal[]    = { KC_SF,     KC_GD,      COMBO_END};
 const uint16_t PROGMEM combo_unds[]        = { KC_DOT,    KC_COMM,    COMBO_END};
 const uint16_t PROGMEM combo_wcaps[]       = { KC_SF,     KC_SJ,      COMBO_END};
-const uint16_t PROGMEM combo_bspc[]        = { KC_O,      KC_P,       COMBO_END};
-const uint16_t PROGMEM combo_bspc_num[]    = { KC_EQL,    KC_9,       COMBO_END};
-const uint16_t PROGMEM combo_del[]         = { KC_I,      KC_O,       COMBO_END};
+/* const uint16_t PROGMEM combo_bspc[]        = { KC_O,      KC_P,       COMBO_END}; */
+/* const uint16_t PROGMEM combo_bspc_num[]    = { KC_EQL,    KC_9,       COMBO_END}; */
+/* const uint16_t PROGMEM combo_del[]         = { KC_I,      KC_O,       COMBO_END}; */
 
 combo_t key_combos[] = {
   [COMBO_ALFRED]        = COMBO( combo_alfred,      LGUI(KC_SPC)),
   [COMBO_AT]            = COMBO( combo_at,          KC_AT),
   [COMBO_AMPERSAND]     = COMBO( combo_ampersand,   KC_AMPERSAND),
+  [COMBO_BANG]          = COMBO( combo_bang,        KC_EXCLAIM),
   [COMBO_CLICK_L]       = COMBO( combo_click_left,  L_CLICK),
-  [COMBO_CLICK_R]       = COMBO( combo_click_right, R_CLICK),
+  /* [COMBO_CLICK_R]       = COMBO( combo_click_right, R_CLICK), */
   [COMBO_DASH]          = COMBO( combo_dash,        KC_MINUS),
   [COMBO_DBL_QUOT]      = COMBO( combo_dub_quot,    KC_DOUBLE_QUOTE),
   [COMBO_ESC]           = COMBO( combo_esc,         KC_ESC),
@@ -78,7 +81,7 @@ combo_t key_combos[] = {
   [COMBO_TERMINAL]      = COMBO( combo_terminal,    KC_NUM_LOCK),
   [COMBO_UNDERSCORE]    = COMBO( combo_unds,        KC_UNDS),
   [COMBO_WORD_CAPS]     = COMBO( combo_wcaps,       CW_TOGG),
-  [COMBO_BSPC]          = COMBO( combo_bspc,        KC_BSPC),
-  [COMBO_BSPC_NUM]      = COMBO( combo_bspc_num,    KC_BSPC),
-  [COMBO_DEL]           = COMBO( combo_del,         KC_DEL),
+  /* [COMBO_BSPC]          = COMBO( combo_bspc,        KC_BSPC), */
+  /* [COMBO_BSPC_NUM]      = COMBO( combo_bspc_num,    KC_BSPC), */
+  /* [COMBO_DEL]           = COMBO( combo_del,         KC_DEL), */
 };

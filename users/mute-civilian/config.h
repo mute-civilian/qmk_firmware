@@ -126,8 +126,8 @@
 #ifdef POINTING_DEVICE_DRIVER_ps2
   // The default streaming mode is flaky and doesn't always work. This setting doesn't seem to affect performance.
   #define PS2_MOUSE_USE_REMOTE_MODE
-  /* #define PS2_MOUSE_INVERT_X */
-  /* #define PS2_MOUSE_INVERT_Y */
+  #define PS2_MOUSE_INVERT_X
+  #define PS2_MOUSE_INVERT_Y
 
   #define PS2_MOUSE_X_MULTIPLIER 3
   #define PS2_MOUSE_Y_MULTIPLIER 3
@@ -142,8 +142,8 @@
   // Start faster when keyboard resets.
   #define PS2_MOUSE_INIT_DELAY 500
 
-  #define PS2_MOUSE_SCROLL_DIVISOR_H 100
-  #define PS2_MOUSE_SCROLL_DIVISOR_V 100
+  /* #define PS2_MOUSE_SCROLL_DIVISOR_H 100 */
+  /* #define PS2_MOUSE_SCROLL_DIVISOR_V 100 */
 #endif
 
 #ifdef POINTING_DEVICE_TRACKPOINT_CIRQUE35
@@ -152,4 +152,6 @@
 
 #ifdef POINTING_DEVICE_DRIVER_cirque_pinnacle_i2c
   #define CIRQUE_PINNACLE_DIAMETER_MM 35
+  #define CIRQUE_PINNACLE_TAP_ENABLE
+  #define POINTING_DEVICE_GESTURES_SCROLL_ENABLE
 #endif
