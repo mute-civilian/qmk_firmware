@@ -13,8 +13,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______  , _______ , DESKTOP , _______ , _______ ,                   AM_CYCLE   , _______ , _______ , _______  , QK_BOOT  ,
     AM_LEFT  , DESK_L  , MISSION , DESK_R  , AM_RITE ,                   AM_INC_PAN , AM_1    , AM_2    , AM_3     , AM_CCW   ,
     KC_LCTL  , _______ , _______ , _______ , _______ ,                   AM_DEC_PAN , MS_BACK , MS_FORE , TAB_BACK , TAB_FORE ,
-                         ZOO_CAM , KC_NO   , ZOO_MIC ,                   ZOO_HAND   , _______
-                         /* ZOO_MIC , KC_NO   , ZOO_CAM ,                   _______    , ZOO_HAND */
+                         ZOO_MIC , KC_NO   , ZOO_CAM ,                   ZOO_HAND   , _______
   ),
 
   [_MOUSE] = LAYOUT_charybdis_3x5(
@@ -25,11 +24,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [_NAV] = LAYOUT_charybdis_3x5(
-    _______ , KC_F6      , ALT_U    , _______ , _______   ,             GUI_L   , KC_HOME    , KC_END  , GUI_R , _______ ,
-    _______ , WEB_B      , ALT_D    , WEB_F   , _______   ,             LEFT    , KC_DOWN    , KC_UP   , RIGHT , _______ ,
-    _______ , SL_CL_RPAN , SL_EMOJI , SL_DMS  , SL_LATER  ,             ALT_L   , _______    , _______ , ALT_R , _______ ,
-                           SL_HOME  , KC_NO   , SL_THREAD ,             _______ , SCREEN_CAP
-                           /* SL_THREAD , KC_NO   , SL_HOME  ,             SCREEN_CAP , _______ */
+    _______ , KC_F6      , ALT_U     , _______ , _______  ,             GUI_L   , KC_HOME    , KC_END  , GUI_R , _______ ,
+    _______ , WEB_B      , ALT_D     , WEB_F   , _______  ,             LEFT    , KC_DOWN    , KC_UP   , RIGHT , _______ ,
+    _______ , SL_CL_RPAN , SL_EMOJI  , SL_DMS  , SL_LATER ,             ALT_L   , _______    , _______ , ALT_R , _______ ,
+                           SL_THREAD , KC_NO   , SL_HOME ,             _______ , SCREEN_CAP
   ),
 
   [_SYMBOLS] = LAYOUT_charybdis_3x5(
