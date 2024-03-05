@@ -7,7 +7,7 @@ enum combo_events {
   COMBO_AMPERSAND,
   COMBO_BANG,
   COMBO_CLICK_L,
-  /* COMBO_CLICK_R, */
+  COMBO_CLICK_R,
   COMBO_DASH,
   COMBO_DBL_QUOT,
   COMBO_ESC,
@@ -35,7 +35,7 @@ const uint16_t PROGMEM combo_at[]          = { KC_M,      KC_COMM,    COMBO_END}
 const uint16_t PROGMEM combo_ampersand[]   = { KC_I,      KC_U,       COMBO_END};
 const uint16_t PROGMEM combo_bang[]        = { KC_N,      KC_M,       COMBO_END};
 const uint16_t PROGMEM combo_click_left[]  = { KC_V,      KC_B,       COMBO_END};
-/* const uint16_t PROGMEM combo_click_right[] = { KC_N,      KC_M,       COMBO_END}; */
+const uint16_t PROGMEM combo_click_right[] = { KC_C,      KC_B,       COMBO_END};
 const uint16_t PROGMEM combo_dash[]        = { KC_DOT,    SYM_SLSH,   COMBO_END};
 const uint16_t PROGMEM combo_dub_quot[]    = { KC_AL,     KC_GK,      COMBO_END};
 const uint16_t PROGMEM combo_esc[]         = { KC_CA,     KC_AS,      COMBO_END};
@@ -63,7 +63,7 @@ combo_t key_combos[] = {
   [COMBO_AMPERSAND]     = COMBO( combo_ampersand,   KC_AMPERSAND),
   [COMBO_BANG]          = COMBO( combo_bang,        KC_EXCLAIM),
   [COMBO_CLICK_L]       = COMBO( combo_click_left,  L_CLICK),
-  /* [COMBO_CLICK_R]       = COMBO( combo_click_right, R_CLICK), */
+  [COMBO_CLICK_R]       = COMBO( combo_click_right, R_CLICK),
   [COMBO_DASH]          = COMBO( combo_dash,        KC_MINUS),
   [COMBO_DBL_QUOT]      = COMBO( combo_dub_quot,    KC_DOUBLE_QUOTE),
   [COMBO_ESC]           = COMBO( combo_esc,         KC_ESC),
