@@ -38,9 +38,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [_WORDS] = LAYOUT_charybdis_3x5(
-    KC_SEC_1 , KC_SEC_2 , KC_SEC_5 , KC_SEC_9 , KC_SEC_10  ,            _______ , _______ , _______ , _______ , SARCASM ,
+    KC_SEC_1 , KC_SEC_2 , KC_SEC_5 , KC_SEC_8 , KC_SEC_10  ,            _______ , _______ , _______ , _______ , SARCASM ,
     KC_SEC_3 , KC_SEC_4 , _______  , _______  , _______    ,            _______ , CAPS    , _______ , _______ , _______ ,
-    KC_SEC_7 , KC_SEC_6 , KC_SEC_8 , _______  , _______    ,            _______ , _______ , _______ , _______ , _______ ,
+    KC_SEC_7 , KC_SEC_6 , KC_SEC_9 , _______  , _______    ,            _______ , _______ , _______ , _______ , _______ ,
                           _______  , KC_NO    , LGUI(KC_0) ,            _______ , _______
                           /* LGUI(KC_0) , KC_NO    , _______   ,            _______ , _______ */
   ),
